@@ -6,7 +6,7 @@ import { useState, useEffect } from 'react'
 function App() {
   const [total, setTotal] = useState(0)
   const [cart, setCart] = useState([])
-  const [items, setItems] = useState([
+  const items = [
     {
       sno: 1,
       title: "Headphone",
@@ -49,7 +49,7 @@ function App() {
       price: 26,
       quantity: 1
     },
-  ])
+  ];
 
   useEffect(() => {
     let t = 0
